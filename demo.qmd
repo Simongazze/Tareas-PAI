@@ -8,7 +8,12 @@ editor: visual
 Librerias
 
 ```{r}
+
+install.packages("kableExtra")
+
 library(ggplot2)
+library(dplyr)
+library(kableExtra)
 ```
 
 1)  Figura creada con código de R.
@@ -31,3 +36,29 @@ library(ggplot2)
 4)  Escritura matemática.
 
 Si $\alpha_1$ = $\alpha_{11} = 5 \Rightarrow \frac{\alpha_1}{\alpha_{11}} \neq 123$
+
+5)  Listas.
+
+```{r}
+lista_simon = list(1:10, "a","b","c","d")
+lista_simon
+```
+
+6)  Tabla creada con sintaxis Markdown.
+
+| Nombre | Edad | Peso |
+|--------|------|------|
+| Pepito | 21   | 90   |
+| Juan   | 20   | 115  |
+| Ramon  | 29   | 100  |
+
+7)Tabla creada con código de R.
+
+```{r}
+iris %>%
+  kable() %>%
+   kable_styling(full_width = F) 
+
+```
+
+
