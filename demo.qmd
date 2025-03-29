@@ -1,7 +1,7 @@
 ---
 title: "Tarea 1"
 author: "Simón Gazze"
-format: html
+format: gfm
 editor: visual
 ---
 
@@ -61,4 +61,12 @@ iris %>%
 
 ```
 
+8)  Bloques de código ocultos y visibles.
 
+```{r}
+print("codigo visible")
+```
+
+```{r echo=FALSE}
+print("codigo invisible")
+```
