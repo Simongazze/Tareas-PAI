@@ -3,13 +3,14 @@ title: "Tarea 1"
 author: "Simón Gazze"
 format: gfm
 editor: visual
+prefer-html: true
 ---
 
 Librerias
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 
-install.packages("kableExtra")
+#install.packages("kableExtra")
 
 library(ggplot2)
 library(dplyr)
@@ -18,7 +19,7 @@ library(kableExtra)
 
 1)  Figura creada con código de R.
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
   ggplot(iris)+ 
   aes(x=Sepal.Length,y=Sepal.Width)+
   geom_point()
@@ -55,7 +56,8 @@ lista_simon
 7)Tabla creada con código de R.
 
 ```{r}
-iris %>%
+iris_resumen= iris[1:10,]
+iris_resumen%>%
   kable() %>%
    kable_styling(full_width = F) 
 
