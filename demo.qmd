@@ -1,0 +1,33 @@
+---
+title: "Tarea 1"
+author: "Simón Gazze"
+format: html
+editor: visual
+---
+
+Librerias
+
+```{r}
+library(ggplot2)
+```
+
+1)  Figura creada con código de R.
+
+```{r}
+  ggplot(iris)+ 
+  aes(x=Sepal.Length,y=Sepal.Width)+
+  geom_point()
+  
+```
+
+2)  Figura a partir de un archivo de imagen externo.
+
+![](https://media.istockphoto.com/id/2138135335/es/foto/concepto-de-flujo-de-git-diagrama-de-software-de-desarrollo-flujo-de-trabajo-de-proceso-de.jpg?s=612x612&w=0&k=20&c=3WQtWaUhJXBbhrUIotTmNunzYElJ7hdBal5trMLXxPk=)
+
+3)  Texto con sintaxis Markdown (negrita y cursiva).
+
+*texto* **de** *ejemplo* **para** *Ver* **la** *utilización* **De** *negrita* **Y** *Cursiva*
+
+4)  Escritura matemática.
+
+Si $\alpha_1$ = $\alpha_{11} = 5 \Rightarrow \frac{\alpha_1}{\alpha_{11}} \neq 123$
